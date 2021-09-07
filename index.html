@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .video-wrapper {
+        position: relative;
+    }
+
+    .video-wrapper video {
+        width: 100%;
+    }
+
+    .video-wrapper canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .tool-box {
+        height: 38px;
+    }
+
+    input,
+    button {
+        outline: none;
+        border: none;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+    .container input,
+    .container button {
+        height: 38px;
+        margin-right: 15px;
+        border-radius: 5px;
+    }
+
+    .danmu-input {
+        width: 300px;
+        border: 1px solid #ccc;
+    }
+
+    .btn {
+        color: #fff;
+        background-color: orange;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="video-wrapper">
+            <canvas id="danmuCanvas">
+            </canvas>
+            <video src="./new yorker.mp4" id="video" controls></video>
+        </div>
+
+        <div class="tool-box">
+            <input type="text" class="danmu-input" />
+            <button class="btn" id="btn">Send</button>
+            <input type="color" name="" id="color">
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
